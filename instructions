@@ -1,0 +1,15 @@
+Sequential vs. binary search:
+
+For this assignment, you will create a main program that has two defined functions: sequential search and binary search.
+
+The main part of your code will create a simple Python list of 10 integers.  You will ask the user what they would like to search for and what type of search they wish to use (sequential or binary).  Use the appropriate function to search the list you created above and tell the user the results of the search.
+
+Once you have the simple version of the program running, what happens if we increase the size of the list to 1,000,000 integers?  How can we do that quickly?  We can use the random number generator and append to the list inside a loop that runs 1,000,000 times.  
+
+myList = []
+for i in range(1000000):
+  #generate a random number
+  value = random.randint(0,1000001)
+
+  #append that random number to the list
+  myList.append(value)
